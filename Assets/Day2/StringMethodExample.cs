@@ -29,7 +29,8 @@ public class StringMethodExample : MonoBehaviour
         name = name.Insert(6, "온"); // 중간 삽입
         Debug.Log(name);
 
-        name = name.Remove('.');
+        name = name.Remove(name.IndexOf('.'));
+        name = name.Replace(".", "");
         name = name.Replace("새", "세");
 
         string name2 = "Karina";
