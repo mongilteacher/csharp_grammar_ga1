@@ -38,7 +38,10 @@ public class ArrayExample : MonoBehaviour
         
         // 배열의 속성과 기능
         int[] ages = new int[4] { 30, 32, 27, 25 };
+        
         Array.Sort(ages);
+        Array.Reverse(ages);
+        
         foreach (int age in ages)
         {
             Debug.Log(age); // 정렬이 됐는지 확인...
