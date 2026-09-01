@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Animal
+public abstract class Animal  // 추상 클래스 : new 연산자를 이용해서 객체를 못만듬,...
 {
     // protected : 외부에서는 접근 불가능하지만, 내부 혹은
     //             자식 클래스에서는 접근 가능
@@ -8,10 +8,9 @@ public class Animal
     protected float _height = 0f;
     protected double _weight = 0f;
     
-    public void Introduce()
-    {
-        Debug.Log($"냐옹~ 내 이름은 {_name}이다 냥~");
-    }
+    // virtual: 하위 클래스에서 재정의 가능함을 알랴주는 키워드
+    public abstract void Introduce(); // 추상 메서드 -> 구현이 없는 메소드이므로 하위 클래스에 무적권 구현을 해야 하는 클래스
+  
 
     public void Run()
     {

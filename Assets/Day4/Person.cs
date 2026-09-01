@@ -34,7 +34,7 @@ public class Person : Animal
    
    
    // 메서드 (기능, 함수)
-   public void Introduce()
+   public override void Introduce()
    {
       Debug.Log($"안녕하세요. 제 이름은 {_name}이고, 나이는 {_age}입니다. 키와 몸무게는({_height}cm/{_weight}kg) 입니다.");
    }
